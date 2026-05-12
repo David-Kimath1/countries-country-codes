@@ -10,10 +10,31 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 </head>
 <body>
-    <div class="container">
-        <h1>Country </h1>
-
+<div class="container">
+    <h1>
+        <i class="fa-solid fa-earth-americas"></i>
+        Country API
+    </h1>
+    <div class="actions">
+        <button id="voiceBtn">
+            <i class="fa-solid fa-microphone"></i>
+        </button>
+        <button id="speakerBtn">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+        <button id="themeToggle">
+            <i class="fa-solid fa-moon"></i>
+        </button>
     </div>
+</div>
+<div id="spinner" class="spinner hidden"></div>
+<select id="countrySelect"></select>
+<div class="search-box">
+    <input type="text" placeholder="Search Country...." id="searchInput">
+    <div id="suggestions"></div>
+</div>
+<div id="result"></div>
+<div id="factBox"></div>
 <script src="script.js"></script>
 </body>
 </html>
